@@ -1,0 +1,243 @@
+/* all media queries */
+
+@media screen and (max-width: 1200px) {
+  /* search bar */
+  .search-bar {
+    right: 7%;
+    width: 25%;
+  }
+
+  /* song title */
+  .song_name h1 {
+    font-size: 2.4vw;
+  }
+
+  /* song description */
+  .song_desc {
+    font-size: 1.2vw;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  /* favourites will be hidden on below resolution */
+  .music-fav {
+    display: none !important;
+  }
+
+  /* followers and author */
+  .followers,
+  .author {
+    font-size: 1.7vw;
+  }
+
+  /* song description */
+  .song_desc {
+    font-size: 1.6vw;
+  }
+
+  /* label for more display at this resolution */
+  label[for='more'] {
+    display: block;
+    top: 19.8%;
+  }
+  /* hidden section 2 by default */
+  .side_section {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    width: 300px;
+    height: 68vh;
+    background-color: #b8473f;
+    box-shadow: 0px 0px 2px 1px white;
+    right: 0px;
+    top: 26%;
+    overflow: scroll;
+    padding-left: 10px;
+    z-index: 5;
+    padding-right: 5px;
+    transition: visibility ease-in-out 0.3s;
+    transition: opacity ease-in-out 0.3s;
+  }
+  /* more button */
+  input[type='checkbox']:checked ~ .side_section {
+    visibility: visible;
+    opacity: 1;
+  }
+  .list {
+    overflow: hidden;
+    height: auto;
+  }
+  .list_item {
+    background-color: #1a1e33;
+  }
+  /* hide section 2 scrollbar */
+  .side_section::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* main section will be cover full page */
+  .main_section {
+    width: 100%;
+  }
+  /* jumbotron */
+  .jumbotron {
+    height: 30vw;
+  }
+
+  /* image in the jumbotron */
+  .jumbotron_image {
+    height: 30vw;
+    width: 30vw;
+  }
+  /* buttons and all */
+  .album_details p {
+    font-size: 1.8vw;
+  }
+  .album_btn > button {
+    height: 4vw;
+    width: 11vw;
+    font-size: 1.7vw;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  /* nav section */
+  .search-bar {
+    width: 25%;
+    position: relative;
+    margin-left: 10%;
+  }
+
+  /* followers and author */
+  .followers,
+  .author {
+    font-size: 2vw;
+  }
+  /* jumbotron description */
+  .song_desc {
+    font-size: 2vw;
+  }
+
+  /* buttons and all */
+  .album_details p {
+    font-size: 1.8vw;
+  }
+  .album_btn > button {
+    height: 4vw;
+    width: 11vw;
+    font-size: 1.7vw;
+  }
+
+  /* label for more display at this resolution */
+  label[for='more'] {
+    display: block;
+    top: 19%;
+  }
+
+  .side_section {
+    top: 24.5%;
+  }
+
+  /* footer section  */
+  .extras > div:nth-child(3) {
+    display: none;
+  }
+  .extras > div:nth-child(4) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  /* nav section */
+  .music-logo {
+    height: 30px;
+    width: 30px;
+  }
+
+  .music-logo img {
+    height: 100%;
+    width: 100%;
+  }
+
+  /* JazHarmony Name css */
+  .music-name h2 {
+    font-size: 3vw;
+  }
+
+  /* Music Player css */
+  .music-name h4 {
+    font-size: 2vw;
+  }
+
+  /* search bar */
+  .search-bar {
+    width: 33%;
+  }
+
+  .search-bar input {
+    padding: 5px;
+    font-size: 0.7rem;
+    font-weight: 350;
+    padding-left: 15%;
+  }
+
+  /* notification bell icon */
+  .notification-bell img {
+    width: 20px;
+    height: 20px;
+  }
+
+  /* profile pic of Music player*/
+  .profile-pic img {
+    width: 30px;
+    height: 30px;
+  }
+
+  /* followers and author */
+  .followers,
+  .author {
+    font-size: 2.5vw;
+  }
+  /* jumbotron description */
+  .description_of_song {
+    padding-left: 4px;
+  }
+
+  .song_desc {
+    font-size: 2.8vw;
+  }
+
+  .album_details {
+    padding-top: 0px;
+  }
+
+  /* label for more display at this resolution */
+  label[for='more'] {
+    display: block;
+    top: 15.5%;
+  }
+
+  .side_section {
+    top: 21%;
+  }
+
+  /* jumbotron */
+  .jumbotron {
+    height: 55vw;
+    text-align: justify;
+  }
+  /* image in the jumbotron */
+  .jumbotron_image {
+    height: 55vw;
+    width: 55vw;
+  }
+  /* buttons and stuff */
+  .album_details p {
+    font-size: 2.5vw;
+  }
+  .album_btn > button {
+    height: 8vw;
+    width: 17vw;
+    font-size: 3.2vw;
+  }
+}

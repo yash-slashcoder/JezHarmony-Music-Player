@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JezHarmony Music Player</title>
+    <!-- Fontawesome css link -->
+    <link rel="stylesheet" href="assets/font-awesome/css/all.min.css" />
+
+    <!-- main css link -->
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/main_page_responsive.css" />
+  </head>
+  <body>
+    <!-- Navigation bar -->
+    <nav class="nav-header">
+      <!-- music player logo and title -->
+      <div class="nav-title">
+        <div class="music-logo">
+          <img src="/images/music-logo.png" alt="logo" />
+        </div>
+        <div class="music-name">
+          <h2>JezHarmony</h2>
+          <h4>Music Player</h4>
+        </div>
+      </div>
+
+      <!-- Favourites -->
+      <div class="music-fav">
+        <h4>Favourites</h4>
+      </div>
+
+      <!-- Search bar -->
+      <div class="search-bar">
+        <div>
+          <!-- search icon -->
+          <i class="fas fa-search search-ico"></i>
+        </div>
+        <!-- search textbox -->
+        <input type="text" name="search" placeholder="Search" />
+        <div class="search-mic">
+          <i class="fas fa-microphone mic-ico"></i>
+        </div>
+      </div>
+
+      <!-- Notification bell icon -->
+      <div class="notification-bell">
+        <img src="/images/notification-bell.png" alt="notification" />
+      </div>
+
+      <!-- profile picture -->
+      <div class="profile-pic">
+        <img src="/images/profile-pic.png" alt="profile" />
+      </div>
+    </nav>
+
+    <!-- Main section -->
+    <main>
+      <!-- There is two aside section to divide left side portion and right side playlist portion -->
+      <aside class="aside main-section">
+        <!-- carousel section -->
+        <section id="carousel">
+          <div class="carousel-image">
+            <img src="/images/carousel/carousel1.jpg" alt="carousel" />
+            <img src="/images/carousel/carousel2.jpg" alt="carousel" />
+            <img src="/images/carousel/carousel3.jpg" alt="carousel" />
+          </div>
+        </section>
+
+        <!-- Latest Release section -->
+        <section id="latest_release">
+          <!-- Section Header -->
+          <div class="mb-12px">
+            <h1>Latest Release</h1>
+          </div>
+
+          <!-- section content -->
+          <div class="latest_release_content">
+            <!-- first card -->
+            <div class="card">
+              <div>
+                <!-- card image -->
+                <img
+                  src="/images/latest_release/Love_your_voice.jpg"
+                  alt="LoveYourVoice"
+                />
+                <div class="play-button">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <!-- song description -->
+              <div class="song-description">
+                <h3>Love Your Voice</h3>
+                <p>Jun 20, 2019</p>
+              </div>
+
+              <!-- option will be shown by click on dots. -->
+              <div class="latest_release_options">
+                <!-- three dots icon -->
+                <label for="latest_release_checkbox"
+                  ><i class="fas fa-ellipsis-h"></i
+                ></label>
+                <input type="checkbox" id="latest_release_checkbox" />
+                <!-- dropdown will open when user click -->
+                <div class="latest_release_dropdown">
+                  <!-- play now item option and it will play the song on footer -->
+                  <div class="dropdown_item">
+                    <p><i class="fas fa-play"></i>Play Now</p>
+                  </div>
+                  <hr />
+                  <div class="dropdown_item">
+                    <p><i class="fas fa-list-ul"></i>Add to Queue</p>
+                  </div>
+                  <hr />
+                  <div class="dropdown_item">
+                    <p><i class="fas fa-music"></i>Add to Playlist</p>
+                  </div>
+                  <hr />
+                  <div class="dropdown_item">
+                    <p><i class="fas fa-info-circle"></i>Info</p>
+                  </div>
+                </div>
+                <!-- song duration -->
+                <p>2:31</p>
+              </div>
+            </div>
+            <!-- second card -->
+            <div class="card">
+              <div>
+                <!-- card image -->
+                <img
+                  src="/images/latest_release/Love_Story.jpg"
+                  alt="LoveStory"
+                />
+                <div class="play-button">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <!-- song description -->
+              <div class="song-description">
+                <h3>Love Story</h3>
+                <p>Mar 5, 2008</p>
+              </div>
+
+              <!-- option will be shown by click on dots. -->
+              <div class="latest_release_options">
+                <!-- three dots icon -->
+                <label for="latest_release_checkbox2"
+                  ><i class="fas fa-ellipsis-h"></i
+                ></label>
+                <input type="checkbox" id="latest_release_checkbox2" />
+                <!-- dropdown will open when user click -->
+                <div class="latest_release_dropdown">
+                  <!-- play now item option and it will play the song on footer -->
+                  <div class="dropdown_item">
+                    <p><i class="fas fa-play"></i>Play Now</p>
+                  </div>
+                  <hr />
+                  <div class="dropdown_item">
+                    <p><i class="fas fa-list-ul"></i>Add to Queue</p>
+                  </div>
+                  <hr />
+                  <div class="dropdown_item">
+                    <p><i class="fas fa-music"></i>Add to Playlist</p>
+                  </div>
+                  <hr />
+                  <div class="dropdown_item">
+                    <p><i class="fas fa-info-circle"></i>Info</p>
+                  </div>
+                </div>
+                <!-- song duration -->
+                <p>4:01</p>
+              </div>
+            </div>
+            <!-- Third card -->
+            <div class="card">
+              <div>
+                <!-- card image -->
+                <img src="/images/latest_release/Closer.jpg" alt="Closer" />
+                <div class="play-button">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <!-- song description -->
+              <div class="song-description">
+                <h3>Closer</h3>
+                <p>Aug 17, 2016</p>
+              </div>
+
+              <!-- option will be shown by click on dots. -->
+              <div class="latest_release_options">
+                <!-- three dots icon -->
+                <label for="latest_release_checkbox3"
+                  ><i class="fas fa-ellipsis-h"></i
+                ></label>
+                <input type="checkbox" id="latest_release_checkbox3" />
+                <!-- dropdown will open when user click -->
+                <div class="latest_release_dropdown">
+                  <!-- play now item option and it will play the song on footer -->
+                  <div class="dropdown_item">
+                    <p><i class="fas fa-play"></i>Play Now</p>
+                  </div>
+                  <hr />
+                  <div class="dropdown_item">
+                    <p><i class="fas fa-list-ul"></i>Add to Queue</p>
+                  </div>
+                  <hr />
+                  <div class="dropdown_item">
+                    <p><i class="fas fa-music"></i>Add to Playlist</p>
+                  </div>
+                  <hr />
+                  <div class="dropdown_item">
+                    <p><i class="fas fa-info-circle"></i>Info</p>
+                  </div>
+                </div>
+                <!-- song duration -->
+                <p>3:35</p>
+              </div>
+            </div>
+            <!-- Forth card -->
+            <div class="card">
+              <div>
+                <!-- card image -->
+                <img src="/images/latest_release/Baby.jpg" alt="Baby" />
+                <div class="play-button">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <!-- song description -->
+              <div class="song-description">
+                <h3>Baby</h3>
+                <p>July 25, 2010</p>
+              </div>
+
+              <!-- option will be shown by click on dots. -->
+              <div class="latest_release_options">
+                <!-- three dots icon -->
+                <label for="latest_release_checkbox4"
+                  ><i class="fas fa-ellipsis-h"></i
+                ></label>
+                <input type="checkbox" id="latest_release_checkbox4" />
+                <!-- dropdown will open when user click -->
+                <div class="latest_release_dropdown">
+                  <!-- play now item option and it will play the song on footer -->
+                  <div class="dropdown_item">
+                    <p><i class="fas fa-play"></i>Play Now</p>
+                  </div>
+                  <hr />
+                  <div class="dropdown_item">
+                    <p><i class="fas fa-list-ul"></i>Add to Queue</p>
+                  </div>
+                  <hr />
+                  <div class="dropdown_item">
+                    <p><i class="fas fa-music"></i>Add to Playlist</p>
+                  </div>
+                  <hr />
+                  <div class="dropdown_item">
+                    <p><i class="fas fa-info-circle"></i>Info</p>
+                  </div>
+                </div>
+                <!-- song duration -->
+                <p>4:15</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Popular Artists section -->
+        <section id="popular_artists">
+          <!-- section header -->
+          <div class="mb-12px">
+            <h1>Popular Artists</h1>
+          </div>
+
+          <!-- section centent -->
+          <div class="popular_artists_content">
+            <!-- user clicks on artists, it will redirect to single playlist page -->
+            <!-- first artist -->
+            <a href="single_playlist_screen.html">
+              <div>
+                <!-- artists image -->
+                <img
+                  src="/images/popular_artistis/one_direction.jpg"
+                  alt="artists"
+                />
+                <div class="play-button">
+                  <i class="fas fa-play"></i>
+                </div>
+                <p>One Direction</p>
+              </div>
+            </a>
+            <!-- second artist -->
+            <a href="single_playlist_screen.html">
+              <div>
+                <!-- artists image -->
+                <img
+                  src="/images/popular_artistis/Imagine_Dragons.jpg"
+                  alt="artists"
+                />
+                <div class="play-button">
+                  <i class="fas fa-play"></i>
+                </div>
+                <p>Imagine Dragon</p>
+              </div>
+            </a>
+            <!-- third artist -->
+            <a href="single_playlist_screen.html">
+              <div>
+                <!-- artists image -->
+                <img
+                  src="/images/popular_artistis/justine_bieber.png"
+                  alt="artists"
+                />
+                <div class="play-button">
+                  <i class="fas fa-play"></i>
+                </div>
+                <p>Justine Bieber</p>
+              </div>
+            </a>
+            <!-- first artist -->
+            <a href="single_playlist_screen.html">
+              <div>
+                <!-- artists image -->
+                <img
+                  src="/images/popular_artistis/taylor_swift.jpg"
+                  alt="artists"
+                />
+                <div class="play-button">
+                  <i class="fas fa-play"></i>
+                </div>
+                <p>Taylor Swift</p>
+              </div>
+            </a>
+            <!-- first artist -->
+            <a href="single_playlist_screen.html">
+              <div>
+                <!-- artists image -->
+                <img
+                  src="/images/popular_artistis/coldplay.jpg"
+                  alt="artists"
+                />
+                <div class="play-button">
+                  <i class="fas fa-play"></i>
+                </div>
+                <p>ColdPlay</p>
+              </div>
+            </a>
+            <!-- first artist -->
+            <a href="single_playlist_screen.html">
+              <div>
+                <!-- artists image -->
+                <img
+                  src="/images/popular_artistis/katy_perry.jpg"
+                  alt="artists"
+                />
+                <div class="play-button">
+                  <i class="fas fa-play"></i>
+                </div>
+                <p>Katy Perry</p>
+              </div>
+            </a>
+          </div>
+        </section>
+
+        <!-- Stations section -->
+        <section id="stations">
+          <!-- this is the main station background -->
+          <div class="station_themes">
+            <!-- station images content with logo -->
+            <div class="station_content">
+              <div id="div1">
+                <div id="div2">
+                  <div id="div3">
+                    <img src="/images/station_logo.png" alt="stations" />
+                    <p>Stations</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- station names with images -->
+            <div class="station_names">
+              <div class="station_name_content">
+                <img src="/images/stations/pop.jpg" alt="pop" />
+                <p>Pop</p>
+              </div>
+              <div class="station_name_content">
+                <img src="/images/stations/chill.jpg" alt="chill" />
+                <p>Chill</p>
+              </div>
+              <div class="station_name_content">
+                <img src="/images/stations/rock.jpg" alt="rock" />
+                <p>Rock</p>
+              </div>
+              <div class="station_name_content">
+                <img src="/images/stations/love.jpg" alt="love" />
+                <p>Love</p>
+              </div>
+              <div class="station_name_content">
+                <img src="/images/stations/workout.jpg" alt="workout" />
+                <p>Workout</p>
+              </div>
+              <div class="station_name_content">
+                <img src="/images/stations/retro.jpg" alt="retro" />
+                <p>Retro</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!--Main sub stations section -->
+        <section id="sub_station">
+          <div class="sub_station_themes">
+            <!-- content of sub-station -->
+            <div class="sub_station_content">
+              <div class="sub_station_name">
+                <span>Party</span>
+              </div>
+            </div>
+            <div class="sub_station_content">
+              <div class="sub_station_name">
+                <span>Electronic</span>
+              </div>
+            </div>
+            <div class="sub_station_content">
+              <div class="sub_station_name">
+                <span>Road Trip</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Latest English section -->
+        <section id="latest_english" class="latest">
+          <!-- section header -->
+          <div class="mb-12px">
+            <h1>Latest English</h1>
+          </div>
+
+          <!-- section content -->
+          <div class="latest_content">
+            <!-- first card -->
+            <div>
+              <!-- card image -->
+              <img
+                src="/images/latest_english/letmeloveyou.jpg"
+                alt="latest_english"
+              />
+              <!-- details of card -->
+              <h3>Let me Love you</h3>
+              <p>Jun 12, 2014</p>
+            </div>
+            <!-- second card -->
+            <div>
+              <!-- card image -->
+              <img
+                src="/images/latest_english/call_me_maybe.jpg"
+                alt="latest_english"
+              />
+              <!-- details of card -->
+              <h3>Call Me Maybe</h3>
+              <p>Dec 2, 2016</p>
+            </div>
+            <!-- third card -->
+            <div>
+              <!-- card image -->
+              <img
+                src="/images/latest_english/where_mylove_goes.jpg"
+                alt="latest_english"
+              />
+              <!-- details of card -->
+              <h3>Where My Love Goes</h3>
+              <p>Mar 13, 2012</p>
+            </div>
+
+            <!-- forth card -->
+            <div>
+              <!-- card image -->
+              <img
+                src="/images/latest_english/you-belong-with-me.jpg"
+                alt="latest_english"
+              />
+              <!-- details of card -->
+              <h3>You Belong With Me</h3>
+              <p>Jan 28, 2015</p>
+            </div>
+            <!-- fifth card -->
+            <div>
+              <!-- card image -->
+              <img
+                src="/images/latest_english/story_of_mylife.jpg"
+                alt="latest_english"
+              />
+              <!-- details of card -->
+              <h3>Story of My Life</h3>
+              <p>Apr 15, 2013</p>
+            </div>
+            <!-- sixth card -->
+            <div>
+              <!-- card image -->
+              <img
+                src="/images/latest_english/brazil.jpg"
+                alt="latest_english"
+              />
+              <!-- details of card -->
+              <h3>Brazil</h3>
+              <p>Nov 4, 2009</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Latest hindi section -->
+        <section id="latest_hindi" class="latest">
+          <!-- section header -->
+          <div class="mb-12px">
+            <h1>Latest Hindi</h1>
+          </div>
+
+          <!-- section content -->
+          <div class="latest_content">
+            <!-- first card -->
+            <div>
+              <!-- card image -->
+              <img src="/images/latest_hindi/ek_tarfa.jpg" alt="latest_hindi" />
+              <!-- details of card -->
+              <h3>Ek Tarfa</h3>
+              <p>Jun 14, 2020</p>
+            </div>
+            <!-- second card -->
+            <div>
+              <!-- card image -->
+              <img
+                src="/images/latest_hindi/main_rahoon_yaa.jpg"
+                alt="latest_hindi"
+              />
+              <!-- details of card -->
+              <h3>Main Rahoon Yaa Na Rahoon</h3>
+              <p>Jun 1, 2018</p>
+            </div>
+            <!-- third card -->
+            <div>
+              <!-- card image -->
+              <img
+                src="/images/latest_hindi/tera_ban_jauga.jpg"
+                alt="latest_hindi"
+              />
+              <!-- details of card -->
+              <h3>Tera Ban Jaaunga</h3>
+              <p>Mar 25, 2017</p>
+            </div>
+
+            <!-- forth card -->
+            <div>
+              <!-- card image -->
+              <img
+                src="/images/latest_hindi/teri_aankhon_me.jpg"
+                alt="latest_hindi"
+              />
+              <!-- details of card -->
+              <h3>Teri Aankhon Me</h3>
+              <p>Oct 24, 2020</p>
+            </div>
+            <!-- fifth card -->
+            <div>
+              <!-- card image -->
+              <img
+                src="/images/latest_hindi/ek-mulaqat-dream-girl.jpg"
+                alt="latest_hindi"
+              />
+              <!-- details of card -->
+              <h3>Ek Mulaqat</h3>
+              <p>Jul 12, 2015</p>
+            </div>
+            <!-- sixth card -->
+            <div>
+              <!-- card image -->
+              <img
+                src="/images/latest_hindi/tum_hi_ho.jpg"
+                alt="latest_hindi"
+              />
+              <!-- details of card -->
+              <h3>Tum Hi Ho</h3>
+              <p>Nov 14, 2012</p>
+            </div>
+          </div>
+        </section>
+      </aside>
+
+      <!-- label for display side section in tablet mode or mobile display -->
+      <label for="more"><i class="fas fa-angle-double-left"></i>More</label>
+      <!-- checkbox for display side section -->
+      <input type="checkbox" id="more" />
+      <!-- playlist aside section -->
+      <aside class="aside playlist">
+        <!-- section heading -->
+        <div class="heading">
+          <h1>Playlist</h1>
+          <h4>
+            <a href="#queue_option_box"
+              >Queue<i class="fas fa-chevron-circle-down"></i
+            ></a>
+          </h4>
+        </div>
+
+        <!-- Queue-box option will be shown by click on the dropdown arrow -->
+        <div id="queue_option_box" class="queue_options">
+          <p>
+            <a href style="color: yellow; font-weight: bolder">Playlists</a>
+          </p>
+          <hr />
+          <p>
+            <a href style="color: yellow; font-weight: bolder"
+              >Favourite Songs</a
+            >
+          </p>
+          <hr />
+          <p>
+            <a href="#" style="color: darkblue; font-weight: bolder">Close</a>
+          </p>
+        </div>
+
+        <!-- playlist content -->
+        <div class="playlist_content">
+          <!-- first playlist item -->
+          <div class="playlist_item">
+            <div class="left_content">
+              <!-- index -->
+              <div style="margin-right: 4px; margin-left: 4px">01</div>
+              <!-- image and play button -->
+              <div class="playlist_cover">
+                <img src="/images/playlist/malang.jpg" alt="playlist" />
+                <div class="play-button">
+                  <i class="fas fa-play" aria-hidden="true"></i>
+                </div>
+              </div>
+              <!-- name and author of the song -->
+              <div>
+                <p>Malang</p>
+                <p>Sachet Tandon</p>
+              </div>
+            </div>
+            <!-- like button -->
+            <div class="right_content">
+              <i class="far fa-heart"></i>
+            </div>
+          </div>
+          <!-- second playlist item -->
+          <div class="playlist_item">
+            <div class="left_content">
+              <!-- index -->
+              <div style="margin-right: 4px; margin-left: 4px">02</div>
+              <!-- image and play button -->
+              <div class="playlist_cover">
+                <img src="/images/playlist/deep_city.png" alt="playlist" />
+                <div class="play-button">
+                  <i class="fas fa-play" aria-hidden="true"></i>
+                </div>
+              </div>
+              <!-- name and author of the song -->
+              <div>
+                <p>I'll Wait</p>
+                <p>Kyago</p>
+              </div>
+            </div>
+            <!-- like button -->
+            <div class="right_content">
+              <i class="far fa-heart"></i>
+            </div>
+          </div>
+          <!-- third playlist item -->
+          <div class="playlist_item">
+            <div class="left_content">
+              <!-- index -->
+              <div style="margin-right: 4px; margin-left: 4px">03</div>
+              <!-- image and play button -->
+              <div class="playlist_cover">
+                <img src="/images/playlist/Na-Na.jpg" alt="playlist" />
+                <div class="play-button">
+                  <i class="fas fa-play" aria-hidden="true"></i>
+                </div>
+              </div>
+              <!-- name and author of the song -->
+              <div>
+                <p>Na Na Na</p>
+                <p>J Star</p>
+              </div>
+            </div>
+            <!-- like button -->
+            <div class="right_content">
+              <i class="far fa-heart"></i>
+            </div>
+          </div>
+          <!-- forth playlist item -->
+          <div class="playlist_item">
+            <div class="left_content">
+              <!-- index -->
+              <div style="margin-right: 4px; margin-left: 4px">04</div>
+              <!-- image and play button -->
+              <div class="playlist_cover">
+                <img src="/images/playlist/guitarist.png" alt="playlist" />
+                <div class="play-button">
+                  <i class="fas fa-play" aria-hidden="true"></i>
+                </div>
+              </div>
+              <!-- name and author of the song -->
+              <div>
+                <p>New Skin</p>
+                <p>Flume</p>
+              </div>
+            </div>
+            <!-- like button -->
+            <div class="right_content">
+              <i class="far fa-heart"></i>
+            </div>
+          </div>
+          <!-- fifth playlist item -->
+          <div class="playlist_item">
+            <div class="left_content">
+              <!-- index -->
+              <div style="margin-right: 4px; margin-left: 4px">05</div>
+              <!-- image and play button -->
+              <div class="playlist_cover">
+                <img src="/images/playlist/rabta.jpg" alt="playlist" />
+                <div class="play-button">
+                  <i class="fas fa-play" aria-hidden="true"></i>
+                </div>
+              </div>
+              <!-- name and author of the song -->
+              <div>
+                <p>Rabta</p>
+                <p>Arjit Singh</p>
+              </div>
+            </div>
+            <!-- like button -->
+            <div class="right_content">
+              <i class="far fa-heart"></i>
+            </div>
+          </div>
+          <!-- sixth playlist item -->
+          <div class="playlist_item">
+            <div class="left_content">
+              <!-- index -->
+              <div style="margin-right: 4px; margin-left: 4px">06</div>
+              <!-- image and play button -->
+              <div class="playlist_cover">
+                <img src="/images/playlist/go_away.jpg" alt="playlist" />
+                <div class="play-button">
+                  <i class="fas fa-play" aria-hidden="true"></i>
+                </div>
+              </div>
+              <!-- name and author of the song -->
+              <div>
+                <p>Go Away</p>
+                <p>Rosie Love</p>
+              </div>
+            </div>
+            <!-- like button -->
+            <div class="right_content">
+              <i class="far fa-heart"></i>
+            </div>
+          </div>
+          <!-- seven playlist item -->
+          <div class="playlist_item">
+            <div class="left_content">
+              <!-- index -->
+              <div style="margin-right: 4px; margin-left: 4px">01</div>
+              <!-- image and play button -->
+              <div class="playlist_cover">
+                <img src="/images/playlist/malang.jpg" alt="playlist" />
+                <div class="play-button">
+                  <i class="fas fa-play" aria-hidden="true"></i>
+                </div>
+              </div>
+              <!-- name and author of the song -->
+              <div>
+                <p>Malang</p>
+                <p>Sachet Tandon</p>
+              </div>
+            </div>
+            <!-- like button -->
+            <div class="right_content">
+              <i class="far fa-heart"></i>
+            </div>
+          </div>
+          <!-- eight playlist item -->
+          <div class="playlist_item">
+            <div class="left_content">
+              <!-- index -->
+              <div style="margin-right: 4px; margin-left: 4px">02</div>
+              <!-- image and play button -->
+              <div class="playlist_cover">
+                <img src="/images/playlist/deep_city.png" alt="playlist" />
+                <div class="play-button">
+                  <i class="fas fa-play" aria-hidden="true"></i>
+                </div>
+              </div>
+              <!-- name and author of the song -->
+              <div>
+                <p>I'll Wait</p>
+                <p>Kyago</p>
+              </div>
+            </div>
+            <!-- like button -->
+            <div class="right_content">
+              <i class="far fa-heart"></i>
+            </div>
+          </div>
+          <!-- ninth playlist item -->
+          <div class="playlist_item">
+            <div class="left_content">
+              <!-- index -->
+              <div style="margin-right: 4px; margin-left: 4px">03</div>
+              <!-- image and play button -->
+              <div class="playlist_cover">
+                <img src="/images/playlist/Na-Na.jpg" alt="playlist" />
+                <div class="play-button">
+                  <i class="fas fa-play" aria-hidden="true"></i>
+                </div>
+              </div>
+              <!-- name and author of the song -->
+              <div>
+                <p>Na Na Na</p>
+                <p>J Star</p>
+              </div>
+            </div>
+            <!-- like button -->
+            <div class="right_content">
+              <i class="far fa-heart"></i>
+            </div>
+          </div>
+          <!-- ten playlist item -->
+          <div class="playlist_item">
+            <div class="left_content">
+              <!-- index -->
+              <div style="margin-right: 4px; margin-left: 4px">04</div>
+              <!-- image and play button -->
+              <div class="playlist_cover">
+                <img src="/images/playlist/guitarist.png" alt="playlist" />
+                <div class="play-button">
+                  <i class="fas fa-play" aria-hidden="true"></i>
+                </div>
+              </div>
+              <!-- name and author of the song -->
+              <div>
+                <p>New Skin</p>
+                <p>Flume</p>
+              </div>
+            </div>
+            <!-- like button -->
+            <div class="right_content">
+              <i class="far fa-heart"></i>
+            </div>
+          </div>
+          <!-- eleven playlist item -->
+          <div class="playlist_item">
+            <div class="left_content">
+              <!-- index -->
+              <div style="margin-right: 4px; margin-left: 4px">05</div>
+              <!-- image and play button -->
+              <div class="playlist_cover">
+                <img src="/images/playlist/rabta.jpg" alt="playlist" />
+                <div class="play-button">
+                  <i class="fas fa-play" aria-hidden="true"></i>
+                </div>
+              </div>
+              <!-- name and author of the song -->
+              <div>
+                <p>Rabta</p>
+                <p>Arjit Singh</p>
+              </div>
+            </div>
+            <!-- like button -->
+            <div class="right_content">
+              <i class="far fa-heart"></i>
+            </div>
+          </div>
+          <!-- twelve playlist item -->
+          <div class="playlist_item">
+            <div class="left_content">
+              <!-- index -->
+              <div style="margin-right: 4px; margin-left: 4px">06</div>
+              <!-- image and play button -->
+              <div class="playlist_cover">
+                <img src="/images/playlist/go_away.jpg" alt="playlist" />
+                <div class="play-button">
+                  <i class="fas fa-play" aria-hidden="true"></i>
+                </div>
+              </div>
+              <!-- name and author of the song -->
+              <div>
+                <p>Go Away</p>
+                <p>Rosie Love</p>
+              </div>
+            </div>
+            <!-- like button -->
+            <div class="right_content">
+              <i class="far fa-heart"></i>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </main>
+    <!-- main portion is end -->
+
+    <!-- footer section -->
+    <footer>
+      <div class="active_song_description">
+        <!-- song image -->
+        <div id="song_image">
+          <img src="/images/latest_release/Closer.jpg" alt="closer" />
+        </div>
+        <!-- song desc -->
+        <div class="song_desc">
+          <h4>Closer</h4>
+          <p>John Lenon</p>
+        </div>
+        <!-- heart and ban icon -->
+        <div class="heart_ban_icon">
+          <span><i class="fas fa-heart"></i></span>
+          <span><i class="fas fa-ban"></i></span>
+        </div>
+      </div>
+
+      <!-- player controls -->
+      <div class="player">
+        <!-- player controls -->
+        <div class="controls">
+          <span><i class="fas fa-random"></i></span>
+          <span><i class="fas fa-step-backward"></i></span>
+          <span><i class="fas fa-pause-circle"></i></span>
+          <span><i class="fas fa-step-forward"></i></span>
+          <span><i class="fas fa-redo"></i></span>
+        </div>
+
+        <!-- player slider -->
+        <div id="slider">
+          <!-- current time -->
+          <div class="time">1:44</div>
+          <!-- player range -->
+          <div class="slider_container">
+            <input
+              type="range"
+              value="32"
+              min="0"
+              max="100"
+              class="slider"
+              id="slider_range"
+            />
+          </div>
+          <!-- total time -->
+          <div class="time">3:58</div>
+        </div>
+      </div>
+
+      <!-- extra player icons -->
+      <div class="extras">
+        <div>
+          <i class="fas fa-list-ul"></i>
+        </div>
+        <div>
+          <i class="fas fa-laptop"></i>
+        </div>
+        <div>
+          <i class="fas fa-volume-up"></i>
+        </div>
+        <div class="slidecontainer" style="width: 30%">
+          <input
+            type="range"
+            min="0"
+            max="100"
+            value="25"
+            class="slider"
+            id="extra_slider_range"
+            style="margin-top: 0px"
+          />
+        </div>
+        <div>
+          <i class="fas fa-expand-alt"></i>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

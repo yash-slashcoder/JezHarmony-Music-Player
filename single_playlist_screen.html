@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JezHarmony Music Player</title>
+    <!-- Fontawesome css link -->
+    <link rel="stylesheet" href="assets/font-awesome/css/all.min.css" />
+
+    <!-- main css link -->
+    <link rel="stylesheet" href="css/single_playlist.css" />
+    <link rel="stylesheet" href="css/single_playlist_responsive.css" />
+  </head>
+  <body>
+    <!-- Navigation bar -->
+    <nav class="nav-header">
+      <!-- music player logo and title -->
+      <div class="nav-title">
+        <div class="music-logo">
+          <img src="/images/music-logo.png" alt="logo" />
+        </div>
+        <div class="music-name">
+          <h2><a href="index.html">JezHarmony</a></h2>
+          <h4><a href="index.html">Music Player</a></h4>
+        </div>
+      </div>
+
+      <!-- Favourites -->
+      <div class="music-fav">
+        <h4>Favourites</h4>
+      </div>
+
+      <!-- Search bar -->
+      <div class="search-bar">
+        <div>
+          <!-- search icon -->
+          <i class="fas fa-search search-ico"></i>
+        </div>
+        <!-- search textbox -->
+        <input type="text" name="search" placeholder="Search" />
+        <div class="search-mic">
+          <i class="fas fa-microphone mic-ico"></i>
+        </div>
+      </div>
+
+      <!-- Notification bell icon -->
+      <div class="notification-bell">
+        <img src="/images/notification-bell.png" alt="notification" />
+      </div>
+
+      <!-- profile picture -->
+      <div class="profile-pic">
+        <img src="/images/profile-pic.png" alt="profile" />
+      </div>
+    </nav>
+
+    <!-- main section  -->
+    <main>
+      <!-- There is two aside section to divide left side portion and right side playlist portion -->
+      <aside class="aside main_section">
+        <div class="jumbotron">
+          <div class="jumbotron_image">
+            <!-- image will display by css -->
+          </div>
+
+          <!-- jumbotron details -->
+          <div class="jumbotron_details">
+            <div class="description_of_song">
+              <!-- song title -->
+              <div class="song_name">
+                <h1>Taylor Swift</h1>
+              </div>
+              <!-- followers portion -->
+              <div class="followers">140M Followers</div>
+
+              <!-- author -->
+              <p class="author">American Singer</p>
+              <!-- short description of singer -->
+              <p class="song_desc">
+                Taylor Alison Swift is an American singer-songwriter. Her
+                narrative songwriting, which often centers around her personal
+                life, has received widespread critical plaudits and media
+                coverage. Born in West Reading, Pennsylvania, Swift relocated to
+                Nashville, Tennessee in 2004 to pursue a career in country
+                music.
+              </p>
+            </div>
+
+            <!-- singer all albums details -->
+            <div class="album_details">
+              <div class="album_btn">
+                <button>Play All</button>
+                <button>Follow</button>
+              </div>
+              <p>303 Tracks | 154 Albums</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- playlist items section -->
+        <div class="playlist_content">
+          <!-- playlists item -->
+          <div class="playlist_item">
+            <div class="left_content">
+              <!-- index -->
+              <div>01</div>
+              <!-- image and play button -->
+              <div>
+                <img
+                  src="/images/latest_release/Love_Story.jpg"
+                  alt="playlist"
+                />
+                <div class="play-button">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <!-- name and author of the song -->
+              <div>
+                <p>Love Story</p>
+                <p>Taylor Swift</p>
+              </div>
+            </div>
+            <div class="center_content">4:05</div>
+            <div class="right_content">
+              <div><i class="far fa-heart"></i></div>
+              <div><i class="far fa-plus"></i></div>
+            </div>
+          </div>
+          <!-- playlists item -->
+          <div class="playlist_item">
+            <div class="left_content">
+              <!-- index -->
+              <div>02</div>
+              <!-- image and play button -->
+              <div>
+                <img src="/images/playlist/malang.jpg" alt="playlist" />
+                <div class="play-button">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <!-- name and author of the song -->
+              <div>
+                <p>Malang</p>
+                <p>Sachet Tandon</p>
+              </div>
+            </div>
+            <div class="center_content">4:05</div>
+            <div class="right_content">
+              <div><i class="far fa-heart"></i></div>
+              <div><i class="far fa-plus"></i></div>
+            </div>
+          </div>
+          <!-- playlists item -->
+          <div class="playlist_item">
+            <div class="left_content">
+              <!-- index -->
+              <div>03</div>
+              <!-- image and play button -->
+              <div>
+                <img src="/images/playlist/go_away.jpg" alt="playlist" />
+                <div class="play-button">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <!-- name and author of the song -->
+              <div>
+                <p>Go Away</p>
+                <p>Else</p>
+              </div>
+            </div>
+            <div class="center_content">4:05</div>
+            <div class="right_content">
+              <div><i class="far fa-heart"></i></div>
+              <div><i class="far fa-plus"></i></div>
+            </div>
+          </div>
+          <!-- playlists item -->
+          <div class="playlist_item">
+            <div class="left_content">
+              <!-- index -->
+              <div>04</div>
+              <!-- image and play button -->
+              <div>
+                <img src="/images/playlist/guitarist.png" alt="playlist" />
+                <div class="play-button">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <!-- name and author of the song -->
+              <div>
+                <p>Guitar</p>
+                <p>Rocks</p>
+              </div>
+            </div>
+            <div class="center_content">4:05</div>
+            <div class="right_content">
+              <div><i class="far fa-heart"></i></div>
+              <div><i class="far fa-plus"></i></div>
+            </div>
+          </div>
+          <!-- playlists item -->
+          <div class="playlist_item">
+            <div class="left_content">
+              <!-- index -->
+              <div>05</div>
+              <!-- image and play button -->
+              <div>
+                <img src="/images/playlist/Na-Na.jpg" alt="playlist" />
+                <div class="play-button">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <!-- name and author of the song -->
+              <div>
+                <p>Na na</p>
+                <p>J Star</p>
+              </div>
+            </div>
+            <div class="center_content">4:05</div>
+            <div class="right_content">
+              <div><i class="far fa-heart"></i></div>
+              <div><i class="far fa-plus"></i></div>
+            </div>
+          </div>
+          <!-- playlists item -->
+          <div class="playlist_item">
+            <div class="left_content">
+              <!-- index -->
+              <div>06</div>
+              <!-- image and play button -->
+              <div>
+                <img src="/images/playlist/deep_city.png" alt="playlist" />
+                <div class="play-button">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <!-- name and author of the song -->
+              <div>
+                <p>Deep City</p>
+                <p>Sachin</p>
+              </div>
+            </div>
+            <div class="center_content">4:05</div>
+            <div class="right_content">
+              <div><i class="far fa-heart"></i></div>
+              <div><i class="far fa-plus"></i></div>
+            </div>
+          </div>
+          <!-- playlists item -->
+          <div class="playlist_item">
+            <div class="left_content">
+              <!-- index -->
+              <div>07</div>
+              <!-- image and play button -->
+              <div>
+                <img src="/images/latest_release/Closer.jpg" alt="playlist" />
+                <div class="play-button">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <!-- name and author of the song -->
+              <div>
+                <p>Closer</p>
+                <p>Penny</p>
+              </div>
+            </div>
+            <div class="center_content">4:05</div>
+            <div class="right_content">
+              <div><i class="far fa-heart"></i></div>
+              <div><i class="far fa-plus"></i></div>
+            </div>
+          </div>
+          <!-- playlists item -->
+          <div class="playlist_item">
+            <div class="left_content">
+              <!-- index -->
+              <div>08</div>
+              <!-- image and play button -->
+              <div>
+                <img src="/images/playlist/malang.jpg" alt="playlist" />
+                <div class="play-button">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <!-- name and author of the song -->
+              <div>
+                <p>Malang</p>
+                <p>Sachet Tandon</p>
+              </div>
+            </div>
+            <div class="center_content">4:05</div>
+            <div class="right_content">
+              <div><i class="far fa-heart"></i></div>
+              <div><i class="far fa-plus"></i></div>
+            </div>
+          </div>
+          <!-- playlists item -->
+          <div class="playlist_item">
+            <div class="left_content">
+              <!-- index -->
+              <div>09</div>
+              <!-- image and play button -->
+              <div>
+                <img src="/images/latest_release/Baby.jpg" alt="playlist" />
+                <div class="play-button">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <!-- name and author of the song -->
+              <div>
+                <p>Baby</p>
+                <p>Justin Bieber</p>
+              </div>
+            </div>
+            <div class="center_content">4:05</div>
+            <div class="right_content">
+              <div><i class="far fa-heart"></i></div>
+              <div><i class="far fa-plus"></i></div>
+            </div>
+          </div>
+          <!-- playlists item -->
+          <div class="playlist_item">
+            <div class="left_content">
+              <!-- index -->
+              <div>10</div>
+              <!-- image and play button -->
+              <div>
+                <img src="/images/playlist/rabta.jpg" alt="playlist" />
+                <div class="play-button">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <!-- name and author of the song -->
+              <div>
+                <p>Rabta</p>
+                <p>Arjit</p>
+              </div>
+            </div>
+            <div class="center_content">4:05</div>
+            <div class="right_content">
+              <div><i class="far fa-heart"></i></div>
+              <div><i class="far fa-plus"></i></div>
+            </div>
+          </div>
+          <!-- playlists item -->
+          <div class="playlist_item">
+            <div class="left_content">
+              <!-- index -->
+              <div>11</div>
+              <!-- image and play button -->
+              <div>
+                <img src="/images/playlist/deep_city.png" alt="playlist" />
+                <div class="play-button">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <!-- name and author of the song -->
+              <div>
+                <p>Deep City</p>
+                <p>Rocks</p>
+              </div>
+            </div>
+            <div class="center_content">4:05</div>
+            <div class="right_content">
+              <div><i class="far fa-heart"></i></div>
+              <div><i class="far fa-plus"></i></div>
+            </div>
+          </div>
+          <!-- playlists item -->
+          <div class="playlist_item">
+            <div class="left_content">
+              <!-- index -->
+              <div>12</div>
+              <!-- image and play button -->
+              <div>
+                <img
+                  src="/images/latest_release/Love_your_voice.jpg"
+                  alt="playlist"
+                />
+                <div class="play-button">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <!-- name and author of the song -->
+              <div>
+                <p>Love Your Voice</p>
+                <p>Baby</p>
+              </div>
+            </div>
+            <div class="center_content">4:05</div>
+            <div class="right_content">
+              <div><i class="far fa-heart"></i></div>
+              <div><i class="far fa-plus"></i></div>
+            </div>
+          </div>
+        </div>
+      </aside>
+      <!-- main aside section is complete -->
+
+      <!-- label for display side section in tablet mode or mobile display -->
+      <label for="more"><i class="fas fa-angle-double-left"></i>More</label>
+      <!-- checkbox for display side section -->
+      <input type="checkbox" id="more" />
+
+      <aside class="aside side_section">
+        <!-- same class will be applicable for artists and recently -->
+        <div class="similar">
+          <!-- section heading -->
+          <div class="section_heading">
+            <h1>Similar Artists</h1>
+            <div class="view_all_button">View All</div>
+          </div>
+          <!-- list the container -->
+          <div class="list">
+            <!-- item -->
+            <div class="list_item">
+              <div>
+                <img src="/images/latest_release/Closer.jpg" alt="playlist" />
+                <div class="play-button">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <div style="position: absolute; left: 120px">
+                <h5>Closer</h5>
+                <p class="author_name">Baby</p>
+              </div>
+              <div class="extra">
+                <div><i class="fas fa-ellipsis-h"></i></div>
+                <p class="author_name">4:15</p>
+              </div>
+            </div>
+            <!-- item -->
+            <div class="list_item">
+              <div>
+                <img
+                  src="/images/latest_release/Love_your_voice.jpg"
+                  alt="playlist"
+                />
+                <div class="play-button">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <div style="position: absolute; left: 120px">
+                <h5>Love Your Voice</h5>
+                <p class="author_name">Baby</p>
+              </div>
+              <div class="extra">
+                <div><i class="fas fa-ellipsis-h"></i></div>
+                <p class="author_name">4:15</p>
+              </div>
+            </div>
+            <!-- item -->
+            <div class="list_item">
+              <div>
+                <img src="/images/latest_hindi/ek_tarfa.jpg" alt="playlist" />
+                <div class="play-button">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <div style="position: absolute; left: 120px">
+                <h5>Ek Tarfa</h5>
+                <p class="author_name">Sachin</p>
+              </div>
+              <div class="extra">
+                <div><i class="fas fa-ellipsis-h"></i></div>
+                <p class="author_name">4:15</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- recently played section -->
+          <div class="similar">
+            <!-- section heading -->
+            <div class="section_heading">
+              <h1>Recently Played</h1>
+              <div class="view_all_button">View All</div>
+            </div>
+            <!-- recently played content -->
+            <div class="list">
+              <!-- first playlist item -->
+              <div class="playlist_item">
+                <div class="left_content">
+                  <!-- index -->
+                  <div style="margin-right: 4px; margin-left: 4px">01</div>
+                  <!-- image and play button -->
+                  <div class="playlist_cover">
+                    <img src="/images/playlist/malang.jpg" alt="playlist" />
+                    <div class="play-button">
+                      <i class="fas fa-play" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                  <!-- name and author of the song -->
+                  <div>
+                    <p>Malang</p>
+                    <p>Sachet Tandon</p>
+                  </div>
+                </div>
+                <!-- like button -->
+                <div class="right_content">
+                  <i class="far fa-heart"></i>
+                </div>
+              </div>
+              <!-- second playlist item -->
+              <div class="playlist_item">
+                <div class="left_content">
+                  <!-- index -->
+                  <div style="margin-right: 4px; margin-left: 4px">02</div>
+                  <!-- image and play button -->
+                  <div class="playlist_cover">
+                    <img src="/images/playlist/deep_city.png" alt="playlist" />
+                    <div class="play-button">
+                      <i class="fas fa-play" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                  <!-- name and author of the song -->
+                  <div>
+                    <p>I'll Wait</p>
+                    <p>Kyago</p>
+                  </div>
+                </div>
+                <!-- like button -->
+                <div class="right_content">
+                  <i class="far fa-heart"></i>
+                </div>
+              </div>
+              <!-- third playlist item -->
+              <div class="playlist_item">
+                <div class="left_content">
+                  <!-- index -->
+                  <div style="margin-right: 4px; margin-left: 4px">03</div>
+                  <!-- image and play button -->
+                  <div class="playlist_cover">
+                    <img src="/images/playlist/Na-Na.jpg" alt="playlist" />
+                    <div class="play-button">
+                      <i class="fas fa-play" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                  <!-- name and author of the song -->
+                  <div>
+                    <p>Na Na Na</p>
+                    <p>J Star</p>
+                  </div>
+                </div>
+                <!-- like button -->
+                <div class="right_content">
+                  <i class="far fa-heart"></i>
+                </div>
+              </div>
+              <!-- forth playlist item -->
+              <div class="playlist_item">
+                <div class="left_content">
+                  <!-- index -->
+                  <div style="margin-right: 4px; margin-left: 4px">04</div>
+                  <!-- image and play button -->
+                  <div class="playlist_cover">
+                    <img src="/images/playlist/guitarist.png" alt="playlist" />
+                    <div class="play-button">
+                      <i class="fas fa-play" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                  <!-- name and author of the song -->
+                  <div>
+                    <p>New Skin</p>
+                    <p>Flume</p>
+                  </div>
+                </div>
+                <!-- like button -->
+                <div class="right_content">
+                  <i class="far fa-heart"></i>
+                </div>
+              </div>
+              <!-- fifth playlist item -->
+              <div class="playlist_item">
+                <div class="left_content">
+                  <!-- index -->
+                  <div style="margin-right: 4px; margin-left: 4px">05</div>
+                  <!-- image and play button -->
+                  <div class="playlist_cover">
+                    <img src="/images/playlist/rabta.jpg" alt="playlist" />
+                    <div class="play-button">
+                      <i class="fas fa-play" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                  <!-- name and author of the song -->
+                  <div>
+                    <p>Rabta</p>
+                    <p>Arjit Singh</p>
+                  </div>
+                </div>
+                <!-- like button -->
+                <div class="right_content">
+                  <i class="far fa-heart"></i>
+                </div>
+              </div>
+              <!-- sixth playlist item -->
+              <div class="playlist_item">
+                <div class="left_content">
+                  <!-- index -->
+                  <div style="margin-right: 4px; margin-left: 4px">06</div>
+                  <!-- image and play button -->
+                  <div class="playlist_cover">
+                    <img src="/images/playlist/go_away.jpg" alt="playlist" />
+                    <div class="play-button">
+                      <i class="fas fa-play" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                  <!-- name and author of the song -->
+                  <div>
+                    <p>Go Away</p>
+                    <p>Rosie Love</p>
+                  </div>
+                </div>
+                <!-- like button -->
+                <div class="right_content">
+                  <i class="far fa-heart"></i>
+                </div>
+              </div>
+              <!-- seven playlist item -->
+              <div class="playlist_item">
+                <div class="left_content">
+                  <!-- index -->
+                  <div style="margin-right: 4px; margin-left: 4px">01</div>
+                  <!-- image and play button -->
+                  <div class="playlist_cover">
+                    <img src="/images/playlist/malang.jpg" alt="playlist" />
+                    <div class="play-button">
+                      <i class="fas fa-play" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                  <!-- name and author of the song -->
+                  <div>
+                    <p>Malang</p>
+                    <p>Sachet Tandon</p>
+                  </div>
+                </div>
+                <!-- like button -->
+                <div class="right_content">
+                  <i class="far fa-heart"></i>
+                </div>
+              </div>
+              <!-- eight playlist item -->
+              <div class="playlist_item">
+                <div class="left_content">
+                  <!-- index -->
+                  <div style="margin-right: 4px; margin-left: 4px">02</div>
+                  <!-- image and play button -->
+                  <div class="playlist_cover">
+                    <img src="/images/playlist/deep_city.png" alt="playlist" />
+                    <div class="play-button">
+                      <i class="fas fa-play" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                  <!-- name and author of the song -->
+                  <div>
+                    <p>I'll Wait</p>
+                    <p>Kyago</p>
+                  </div>
+                </div>
+                <!-- like button -->
+                <div class="right_content">
+                  <i class="far fa-heart"></i>
+                </div>
+              </div>
+              <!-- ninth playlist item -->
+              <div class="playlist_item">
+                <div class="left_content">
+                  <!-- index -->
+                  <div style="margin-right: 4px; margin-left: 4px">03</div>
+                  <!-- image and play button -->
+                  <div class="playlist_cover">
+                    <img src="/images/playlist/Na-Na.jpg" alt="playlist" />
+                    <div class="play-button">
+                      <i class="fas fa-play" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                  <!-- name and author of the song -->
+                  <div>
+                    <p>Na Na Na</p>
+                    <p>J Star</p>
+                  </div>
+                </div>
+                <!-- like button -->
+                <div class="right_content">
+                  <i class="far fa-heart"></i>
+                </div>
+              </div>
+              <!-- ten playlist item -->
+              <div class="playlist_item">
+                <div class="left_content">
+                  <!-- index -->
+                  <div style="margin-right: 4px; margin-left: 4px">04</div>
+                  <!-- image and play button -->
+                  <div class="playlist_cover">
+                    <img src="/images/playlist/guitarist.png" alt="playlist" />
+                    <div class="play-button">
+                      <i class="fas fa-play" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                  <!-- name and author of the song -->
+                  <div>
+                    <p>New Skin</p>
+                    <p>Flume</p>
+                  </div>
+                </div>
+                <!-- like button -->
+                <div class="right_content">
+                  <i class="far fa-heart"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </main>
+    <!-- main section is end -->
+
+    <!-- footer section -->
+    <footer>
+      <div class="active_song_description">
+        <!-- song image -->
+        <div id="song_image">
+          <img src="/images/latest_release/Closer.jpg" alt="closer" />
+        </div>
+        <!-- song desc -->
+        <div class="song_desc">
+          <h4>Closer</h4>
+          <p>John Lenon</p>
+        </div>
+        <!-- heart and ban icon -->
+        <div class="heart_ban_icon">
+          <span><i class="fas fa-heart"></i></span>
+          <span><i class="fas fa-ban"></i></span>
+        </div>
+      </div>
+
+      <!-- player controls -->
+      <div class="player">
+        <!-- player controls -->
+        <div class="controls">
+          <span><i class="fas fa-random"></i></span>
+          <span><i class="fas fa-step-backward"></i></span>
+          <span><i class="fas fa-pause-circle"></i></span>
+          <span><i class="fas fa-step-forward"></i></span>
+          <span><i class="fas fa-redo"></i></span>
+        </div>
+
+        <!-- player slider -->
+        <div id="slider">
+          <!-- current time -->
+          <div class="time">1:44</div>
+          <!-- player range -->
+          <div class="slider_container">
+            <input
+              type="range"
+              value="32"
+              min="0"
+              max="100"
+              class="slider"
+              id="slider_range"
+            />
+          </div>
+          <!-- total time -->
+          <div class="time">3:58</div>
+        </div>
+      </div>
+
+      <!-- extra player icons -->
+      <div class="extras">
+        <div>
+          <i class="fas fa-list-ul"></i>
+        </div>
+        <div>
+          <i class="fas fa-laptop"></i>
+        </div>
+        <div>
+          <i class="fas fa-volume-up"></i>
+        </div>
+        <div class="slidecontainer" style="width: 30%">
+          <input
+            type="range"
+            min="0"
+            max="100"
+            value="25"
+            class="slider"
+            id="extra_slider_range"
+            style="margin-top: 0px"
+          />
+        </div>
+        <div>
+          <i class="fas fa-expand-alt"></i>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

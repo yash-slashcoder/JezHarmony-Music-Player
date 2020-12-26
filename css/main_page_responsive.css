@@ -1,0 +1,251 @@
+/* all media queries */
+
+@media screen and (max-width: 1200px) {
+  .search-bar {
+    right: 7%;
+    width: 25%;
+  }
+
+  .queue_options {
+    top: 21%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .music-fav {
+    margin-left: 15px;
+  }
+
+  .sub_station_content {
+    width: 20.9vw;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  /* favourites will be hidden on below resolution */
+  .music-fav {
+    display: none !important;
+  }
+
+  /* label for more display at this resolution */
+  label[for='more'] {
+    display: block;
+  }
+
+  /* side section will be hidden */
+  .playlist {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    width: 300px;
+    height: 66vh;
+    background-color: #4446d1;
+    box-shadow: 0px 0px 2px 1px white;
+    right: 0px;
+    top: 27%;
+    z-index: 5;
+    overflow: scroll;
+    padding-left: 10px;
+    transition: visibility ease-in-out 0.2s;
+    transition: opacity ease-in-out 0.2s;
+  }
+
+  .playlist_content {
+    overflow: visible;
+  }
+
+  /* re-adjusted the queue options box */
+  .queue_options {
+    position: absolute;
+    height: auto;
+    width: auto;
+    top: 12%;
+    right: 0%;
+  }
+  /* more button */
+  input[id='more']:checked ~ .playlist {
+    visibility: visible;
+    opacity: 1;
+  }
+  /* hide scrollbar for side section */
+  .playlist::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* main section will cover whole page */
+  .main-section {
+    width: 100%;
+  }
+
+  .card {
+    min-width: 250px; /* to apply the flex effect */
+  }
+
+  #carousel {
+    height: 9%;
+  }
+  /* carousel image */
+  .carousel-image img {
+    height: 20vw;
+    width: 32.5vw;
+  }
+  /* first and 3rd images of the carousel */
+  .carousel-image img:nth-child(1) {
+    left: 56vw;
+  }
+  .carousel-image img:nth-child(3) {
+    right: 56vw;
+  } /* since the size of the carousel images is increased, the hover size should also be increased */
+  .carousel-image img:hover {
+    height: 23.5vw;
+    width: 37vw;
+  }
+
+  /* music themes section */
+  .station_themes {
+    justify-content: space-around;
+  }
+  .station_names {
+    width: 50%;
+  }
+
+  /* station content */
+  /* increased station content size */
+  .station_name_content {
+    width: 12vw;
+    height: 12vw;
+  }
+  .station_name_content p {
+    font-size: 3vw;
+    top: -12.5vw;
+  }
+  /* increased music themes image size */
+  .station_themes div img {
+    width: 12vw;
+    height: 12vw;
+  }
+
+  .sub_station_content {
+    width: 29%;
+    height: 16vw;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  /* nav section */
+  .search-bar {
+    width: 25%;
+    position: relative;
+    margin-left: 10%;
+  }
+
+  /* footer section  */
+  .extras > div:nth-child(3) {
+    display: none;
+  }
+  .extras > div:nth-child(4) {
+    display: none;
+  }
+
+  .sub_station_content {
+    width: 36vw;
+    height: 24vw;
+    min-width: 123px;
+    min-height: 82px;
+  }
+  .sub_station_content .sub_station_name span {
+    font-size: 4vw;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  /* nav section */
+  .music-logo {
+    height: 30px;
+    width: 30px;
+  }
+
+  .music-logo img {
+    height: 100%;
+    width: 100%;
+  }
+
+  /* JazHarmony Name css */
+  .music-name h2 {
+    font-size: 3vw;
+  }
+
+  /* Music Player css */
+  .music-name h4 {
+    font-size: 2vw;
+  }
+
+  /* search bar */
+  .search-bar {
+    width: 33%;
+  }
+
+  .search-bar input {
+    padding: 5px;
+    font-size: 0.7rem;
+    font-weight: 350;
+    padding-left: 15%;
+  }
+
+  /* notification bell icon */
+  .notification-bell img {
+    width: 20px;
+    height: 20px;
+  }
+
+  /* profile pic of Music player*/
+  .profile-pic img {
+    width: 30px;
+    height: 30px;
+  }
+
+  /* station content */
+  /* increased station content size */
+  .station_name_content {
+    width: 14vw;
+    height: 14vw;
+  }
+  .station_name_content p {
+    font-size: 3.5vw;
+    top: -14.5vw;
+  }
+  /* increased music themes image size */
+  .station_themes div img {
+    width: 14vw;
+    height: 14vw;
+  }
+
+  /* stations */
+  #div1 {
+    width: 32vw;
+    height: 21vw;
+  }
+  #div2 {
+    width: 29vw;
+    height: 29vw;
+    top: -4vw;
+    left: 1.5vw;
+  }
+  #div3 {
+    width: 26vw;
+    height: 37vw;
+    top: -4vw;
+    left: 1.5vw;
+  }
+  #div3 img {
+    width: 15vw;
+    height: 15vw;
+  }
+  /* text part in that section which contains "stations" text */
+  #div3 p {
+    font-size: 5vw;
+  }
+  .sub_station_content .sub_station_name span {
+    font-size: 6vw;
+  }
+}
