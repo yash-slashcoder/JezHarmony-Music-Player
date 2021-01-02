@@ -683,17 +683,17 @@ input[type='checkbox']:checked ~ .latest_release_dropdown {
 
 /* party theme  */
 .sub_station_themes .sub_station_content:nth-child(1) .sub_station_name {
-  background-image: url('/images/sub_stations/party.jpg');
+  background-image: url('https://yash-slashcoder.github.io/JezHarmony-Music-Player/images/sub_stations/party.jpg');
 }
 
 /* electronic theme */
 .sub_station_themes .sub_station_content:nth-child(2) .sub_station_name {
-  background-image: url('/images/sub_stations/electronic.jpg');
+  background-image: url('https://yash-slashcoder.github.io/JezHarmony-Music-Player/images/sub_stations/electronic.jpg');
 }
 
 /* road trip theme */
 .sub_station_themes .sub_station_content:nth-child(3) .sub_station_name {
-  background-image: url('/images/sub_stations/road_trip.jpg');
+  background-image: url('https://yash-slashcoder.github.io/JezHarmony-Music-Player/images/sub_stations/road_trip.jpg');
 }
 
 /* hover effect on the image */
