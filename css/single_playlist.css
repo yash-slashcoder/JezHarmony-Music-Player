@@ -268,7 +268,7 @@ main::-webkit-scrollbar {
   height: 25vw;
   width: 20vw;
   background-image: linear-gradient(to bottom, transparent, rgb(58, 20, 65)),
-    url('/images/popular_artistis/taylor_swift.jpg');
+    url('images/popular_artistis/taylor_swift.jpg');
   background-size: cover;
   background-position: right;
   background-repeat: no-repeat;
